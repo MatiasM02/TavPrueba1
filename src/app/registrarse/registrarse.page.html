@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">PRUEBA UNO</ion-title>
+    <hr>
+    <ion-button fill="clear" [routerLink]="['/']"><ion-icon name="chevron-back-outline"></ion-icon>atras</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Nueva Cuenta</ion-card-title>
+      <ion-card-subtitle class="ion-text-center">Completa los campos</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input placeholder="Ingresa tu Nick" minlength="3" maxlength="8"></ion-input>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input placeholder="ingresa tu email" type="email" ngModel email></ion-input>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label position="floating">Selecciona tu carrera</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Cocina">Cocina</ion-select-option>
+          <ion-select-option value="Informatica">Informatica</ion-select-option>
+          <ion-select-option value="Redes">Redes</ion-select-option>
+          <ion-select-option value="Administracion">Administracion</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" placeholder="Ingresa tu contraseña" minlength="4"></ion-input>
+      </ion-item>
+      <ion-button color="success" (click)="alerta()">Registrar</ion-button>
+      <ion-button fill="clear">Limpiar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

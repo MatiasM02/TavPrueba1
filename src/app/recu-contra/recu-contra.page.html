@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">PRUEBA UNO</ion-title>
+    <hr>
+    <ion-button [routerLink]="['/']" fill="clear"><ion-icon name="chevron-back-outline"></ion-icon>atras</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Recuperar tu contraseña</ion-card-title>
+      <ion-card-subtitle class="ion-text-center">Rellena los campos para solicitar tu nueva contraseña</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input placeholder="Ingresa tu correo registrado" type="email" ngModel email></ion-input>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input placeholder="Ingresa tu usuario registrado" minlength="3" maxlength="8"></ion-input>
+      </ion-item>
+      <ion-button expand="full" fill="clear" (click)="alerta()">Solicitar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

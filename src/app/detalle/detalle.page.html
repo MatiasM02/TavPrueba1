@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ titulo }}</ion-title>
+    <hr>
+    <ion-button [routerLink]="['/catalogo']" fill="clear"><ion-icon name="chevron-back-outline"></ion-icon>atras</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+
+    <ion-card-content>
+      <ion-slides>
+        <ion-slide>
+          <div class="slide">
+            <img src="{{fotos}}">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <img src="{{fotos}}">
+        </ion-slide>
+        <ion-slide>
+          <img src="{{fotos}}">
+        </ion-slide>
+      </ion-slides>
+      <h1 class="ion-text-center">{{ titulo }}</h1>
+      <hr>
+      <p>Precio: {{ precio }}</p>
+      <hr>
+      <ion-label>{{ descripcion }}</ion-label>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

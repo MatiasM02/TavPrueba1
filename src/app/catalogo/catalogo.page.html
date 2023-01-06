@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">PRUEBA UNO</ion-title>
+    <hr>
+    <ion-button fill="clear" [routerLink]="['/']"><ion-icon name="chevron-back-outline"></ion-icon>Salir</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Catalogo de Productos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+        <ion-item button [routerLink]="['/detalle', 'Fantastic Fresh Chair']" [queryParams]="{id: '1',precio: '$734', descripcion: 'New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016'}" [state]="{img1: 'https://api.lorem.space/image/shoes?w=640&h=480&r=7759', img2: 'https://api.lorem.space/image/shoes?w=640&h=480&r=5957', img3: 'https://api.lorem.space/image/shoes?w=640&h=480&r=9262'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/shoes?w=640&h=480&r=7759">
+          </ion-avatar>
+          <h3>Fantastic Fresh Chair</h3>
+          <p> precio: $734</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Intelligent Rubber Towels']" [queryParams]="{id: '2',precio: '$923', descripcion: 'Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals'}" [state]="{img1: 'https://api.lorem.space/image?w=640&h=480&r=4854', img2: 'https://api.lorem.space/image?w=640&h=480&r=5742', img3: 'https://api.lorem.space/image?w=640&h=480&r=4388'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image?w=640&h=480&r=4854">
+          </ion-avatar>
+          <h3>Intelligent Rubber Towels</h3>
+          <p>precio: $923</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Bespoke Rubber Bacon']" [queryParams]="{id: '3',precio: '$390', descripcion: 'The Football Is Good For Training And Recreational Purposes'}" [state]="{img1: '', img2: '', img3: ''}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/shoes?w=640&h=480&r=9008">
+          </ion-avatar>
+          <h3>Bespoke Rubber Bacon</h3>
+          <p>precio: $390</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Intelligent Rubber Fish']" [queryParams]="{id: '4',precio: '$434', descripcion: 'Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support'}" [state]="{img1: 'https://api.lorem.space/image/shoes?w=640&h=480&r=9008', img2: 'https://api.lorem.space/image/shoes?w=640&h=480&r=856', img3: 'https://api.lorem.space/image/shoes?w=640&h=480&r=5211'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image?w=640&h=480&r=9884">
+          </ion-avatar>
+          <h3>Intelligent Rubber Fish</h3>
+          <p>precio: $434</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Fantastic Granite Salad']" [queryParams]="{id: '5',precio: '$961', descripcion: 'The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design'}" [state]="{img1: 'https://api.lorem.space/image?w=640&h=480&r=9884', img2: 'https://api.lorem.space/image?w=640&h=480&r=3627', img3: 'https://api.lorem.space/image?w=640&h=480&r=198'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/furniture?w=640&h=480&r=2905">
+          </ion-avatar>
+          <h3> Fantastic Granite Salad</h3>
+          <p>precio: $961</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Bespoke Rubber Car']" [queryParams]="{id: '6',precio: '$404', descripcion: 'Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support'}" [state]="{img1: 'https://api.lorem.space/image/furniture?w=640&h=480&r=2905', img2: 'https://api.lorem.space/image/furniture?w=640&h=480&r=2347', img3: 'https://api.lorem.space/image/furniture?w=640&h=480&r=1465'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/furniture?w=640&h=480&r=909">
+          </ion-avatar>
+          <h3>Bespoke Rubber Car</h3>
+          <p>precio: $404</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Incredible Rubber Car']" [queryParams]="{id: '7',precio: '$486', descripcion: 'Bostons most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles'}" [state]="{img1: 'https://api.lorem.space/image/furniture?w=640&h=480&r=909', img2: 'https://api.lorem.space/image/furniture?w=640&h=480&r=8614', img3: 'https://api.lorem.space/image/furniture?w=640&h=480&r=274'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image?w=640&h=480&r=9781">
+          </ion-avatar>
+          <h3>Incredible Rubber Car</h3>
+          <p>precio: $486</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Unbranded Frozen Bike']" [queryParams]="{id: '8',precio: '·327', descripcion: 'New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016'}" [state]="{img1: 'https://api.lorem.space/image/furniture?w=640&h=480&r=909', img2: 'https://api.lorem.space/image/furniture?w=640&h=480&r=8614', img3: 'https://api.lorem.space/image/furniture?w=640&h=480&r=274'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/furniture?w=640&h=480&r=4797">
+          </ion-avatar>
+          <h3> Unbranded Frozen Bike</h3>
+          <p>precio: $327</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Oriental Steel Chair']" [queryParams]="{id: '9',precio: '$153', descripcion: 'Bostons most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles'}" [state]="{img1: 'https://api.lorem.space/image/furniture?w=640&h=480&r=909', img2: 'https://api.lorem.space/image/furniture?w=640&h=480&r=8614', img3: 'https://api.lorem.space/image/furniture?w=640&h=480&r=274'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/watch?w=640&h=480&r=2366">
+          </ion-avatar>
+          <h3>Oriental Steel Chair</h3>
+          <p>precio: $153</p>
+        </ion-item>
+        <ion-item button [routerLink]="['/detalle', 'Electronic Steel Table']" [queryParams]="{id: '10',precio: '$709', descripcion: 'Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals'}" [state]="{img1: 'https://api.lorem.space/image/furniture?w=640&h=480&r=909', img2: 'https://api.lorem.space/image/furniture?w=640&h=480&r=8614', img3: 'https://api.lorem.space/image/furniture?w=640&h=480&r=274'}">
+          <ion-avatar slot="start">
+            <img alt="" src="https://api.lorem.space/image/watch?w=640&h=480&r=8518">
+          </ion-avatar>
+          <h3>Electronic Steel Table</h3>
+          <p>precio: $709</p>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

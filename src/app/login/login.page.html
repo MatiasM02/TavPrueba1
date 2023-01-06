@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">PRUEBA UNO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h4 class="ion-text-center">Aquì comienza todo</h4>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Bienvenido</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label >Usuario</ion-label>
+        <ion-input minlength="3" maxlength="8"></ion-input>
+      </ion-item>
+      <hr>
+      <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" minlength="4"></ion-input>
+      </ion-item>
+      <ion-button expand="full" [routerLink]="['/catalogo']">Ingresar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button fill="clear" expand="full" [routerLink]="['/registrarse']">Crea una cuenta gratis</ion-button>
+  <hr>
+  <ion-button expand="full" fill="clear" color="danger" [routerLink]="['/contraseña']">¿Olvido la contraseña?</ion-button>
+</ion-content>
